@@ -1,1 +1,30 @@
 <h1 style="text-align: center;">Employee Component</h1>
+
+EmpID:
+<input type="text"
+    class="form-control"
+    id="empID">
+<br/>
+EmpName:
+<input type="text"
+    class="form-control"
+    id="empName">
+<br/>
+Salary:
+<input type="text"
+    class="form-control"
+    id="salary">
+<br/>
+Designation:
+<input type="text"
+    class="form-control"
+    id="designation">
+
+<button class="btn btn-primary" (click)="getEmployeeDetails()">
+Get EMployee Details
+</button>
+
+<p>{{ 'EmpID: ' + empID  }}</p>
+<p>{{ 'EmpName: ' + empName }} </p>
+<p>{{ 'Salary: ' + salary  }}</p>
+<p>{{ 'Designation: ' + designation }}</p>
